@@ -150,3 +150,55 @@ ul {
     left: 0;
 }
 /* Section_Banner */
+/* Banner_Slider */
+.banner-section__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.banner-section__slider {
+    max-width: 870px;
+}
+.banner-section__slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    outline: none;
+    border: none;
+    z-index: 10;
+    cursor: pointer;
+}
+.banner-section__slider-btnprev {
+    left: 20px;
+}
+.banner-section__slider-btnnext {
+    right: 20px;
+}
+.slick-dots {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.slick-dots li {
+    display: inline-block;
+    padding: 0 5px;
+}
+.slick-dots button {
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    background-color: transparent;
+}
+.slick-active button {
+    background-color: #ffffff;
+}
+/* Banner_Sale */
+.sale-item {
+    max-width: 265px;
+}
