@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,7 @@
     <title>Drive Moto</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -17,36 +18,94 @@
                     <nav class="menu">
                         <ul class="menu__list">
                             <li class="menu__item">
-                                <a href="!#" class="menu__link">Магазини</a>
+                                <a href="#!" class="menu__link">Магазини</a>
                             </li>
                             <li class="menu__item">
-                                <a href="!#" class="menu__link">Акції</a>
+                                <a href="#!" class="menu__link">Акції</a>
                             </li>
                             <li class="menu__item">
-                                <a href="!#" class="menu__link">Доставка та оплата</a>
+                                <a href="#!" class="menu__link">Доставка та оплата</a>
                             </li>
                         </ul>
                     </nav>
-                    <a href="!#" class="logo">
+                    <a href="#!" class="logo">
                         <img src="img/logo.svg" alt="Logo" class="logo__img">
                     </a>
                     <div class="header__box">
                         <p class="header__address">Київ, вул. Бандери, 21</p>
-                        <ul class="user__list">
-                            <li class="user__list-item">1</li>
-                            <li class="user__list-item">2</li>
-                            <li class="user__list-item">3</li>
+                        <ul class="user-list">
+                            <li class="user-list__item">
+                                <a href="#!" class="user-list__link">
+                                    <img src="img/icon-heart.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="user-list__item">
+                                <a href="#!" class="user-list__link">
+                                    <img src="img/icon-user.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="user-list__item">
+                                <a href="#!" class="user-list__link basket">
+                                    <img src="img/icon-basket.svg" alt="">
+                                    <p class="basket__num">1</p>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="header__bottoom">
+        <div class="header__bottom">
             <div class="container">
-
+                <ul class="menu-categories">
+                    <li class="menu-categories__item"><a href="#!" class="menu-categories__link">Квадроцикли</a></li>
+                    <li class="menu-categories__item"><a href="#!" class="menu-categories__link">Катери</a></li>
+                    <li class="menu-categories__item"><a href="#!" class="menu-categories__link">Гідроцикли</a></li>
+                    <li class="menu-categories__item"><a href="#!" class="menu-categories__link">Човни</a></li>
+                    <li class="menu-categories__item"><a href="#!" class="menu-categories__link">Всюдиходи</a></li>
+                    <li class="menu-categories__item"><a href="#!" class="menu-categories__link">Снігоходи</a></li>
+                    <li class="menu-categories__item"><a href="#!" class="menu-categories__link">Двигуни</a></li>
+                    <li class="menu-categories__item"><a href="#!" class="menu-categories__link">Запчастини</a></li>
+                </ul>
             </div>
         </div>
     </header>
+    <section class="banner-section">
+        <div class="container">
+            <div class="banner-section__inner">
+                <div class="banner-section__slider">
+                    <a class="banner-section__slider-item" href="#!">
+                        <img src="img/slider/banner-slider.jpg" alt="">
+                    </a>
+                    <a class="banner-section__slider-item" href="#!">
+                        <img src="img/slider/banner-slider.jpg" alt="">
+                    </a>
+                    <a class="banner-section__slider-item" href="#!">
+                        <img src="img/slider/banner-slider.jpg" alt="">
+                    </a>
+                    <a class="banner-section__slider-item" href="#!">
+                        <img src="img/slider/banner-slider.jpg" alt="">
+                    </a>
+                    <a class="banner-section__slider-item" href="#!">
+                        <img src="img/slider/banner-slider.jpg" alt="">
+                    </a>
+                    <a class="banner-section__slider-item" href="#!">
+                        <img src="img/slider/banner-slider.jpg" alt="">
+                    </a>
+                </div>
+                <a class="banner-section__item sale-item" href="#!">
+                    <div class="sale-item__top">
+                        <div class="sale-item__info">акція</div>
+                        <div class="sale-item__price">
+                            <div class="price sale-item__price-new">190 000 <span>&#8372;</span></div>
+                            <div class="price sale-item__price-old">225 000 <span>&#8372;</span></div>
+                        </div>
+                    </div>
+                    <img class="sale-item__img" src="img/content/sale-1.png" alt="Мотор для катера">
+                </a>
+            </div>
+        </div>
+    </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
