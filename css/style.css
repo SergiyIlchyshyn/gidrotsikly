@@ -36,6 +36,7 @@ body {
     font-weight: var(--fontRegular);
 }
 a {
+    display: inline-block;
     text-decoration: none;
     color: inherit;
 }
@@ -48,11 +49,11 @@ ul {
     margin: 0 auto;
     padding: 0 15px;
 }
-/* Header */
-/* Header_Top */
-.header {
+.page-section {
     padding-bottom: 78px;
 }
+/* Header */
+/* Header_Top */
 .header__top-inner {
     display: flex;
     align-items: center;

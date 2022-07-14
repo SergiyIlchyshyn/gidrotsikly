@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header page-section">
         <div class="header__top">
             <div class="container">
                 <div class="header__top-inner">
@@ -67,7 +67,7 @@
             </div>
         </div>
     </header>
-    <section class="banner-section">
+    <section class="banner-section page-section">
         <div class="container">
             <div class="banner-section__inner">
                 <div class="banner-section__slider">
@@ -106,6 +106,38 @@
                         Акція діє до <span>31.08.2022</span>
                     </p>
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="search page-section">
+        <div class="container">
+            <div class="search__inner">
+                <div class="search__tabs">
+                    <a class="search__tabs-item search__tabs-item--active" href="tab-1">Пошук по номеру</a>
+                    <a class="search__tabs-item" href="tab-2">Пошук по марці</a>
+                    <a class="search__tabs-item" href="tab-3">Пошук по назві товару</a>
+                </div>
+                <div class="search__content">
+                    <div id="tab-1" class="search__content-item">
+                        <form class="search__content-form">
+                            <input class="search__content-input" type="text" placeholder="Введіть номер">
+                            <button class="search__content-btn" type="submit">шукати</button>
+                        </form>
+                    </div>
+                    <div id="tab-2" class="search__content-item">
+                        <form class="search__content-form">
+                            <input class="search__content-input" type="text" placeholder="Введіть марку">
+                            <button class="search__content-btn" type="submit">шукати</button>
+                        </form>
+                    </div>
+                    <div id="tab-3" class="search__content-item">
+                        <form class="search__content-form">
+                            <input class="search__content-input" type="text" placeholder="Введіть назву товару">
+                            <button class="search__content-btn" type="submit">шукати</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
