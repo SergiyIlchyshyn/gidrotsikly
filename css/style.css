@@ -393,3 +393,53 @@ ul {
     letter-spacing: 0.12em;
     cursor: pointer;
 }
+/* Cqtegories_Section */
+.categories__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.categories__item {
+    width: 370px;
+    display: flex;
+    padding: 20px 20px 16px;
+    margin-bottom: 30px;
+    border: 1px solid var(--lightColor);
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+.categories__item-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.categories__item-img {
+    width: 50%;
+    text-align: center;
+}
+.categories__item-img img {
+    max-width: 100%;
+}
+.categories__item-title {
+    font-size: 23px;
+    line-height: 28px;
+    font-family: var(--Barlow);
+    font-weight: var(--fontBold);
+    transition: all 0.3s;
+}
+.categories__item:hover {
+    box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+}
+.categories__item:hover .categories__item-title {
+    color: var(--accentColor);
+}
+.categories__item-text {
+    font-size: 14px;
+    line-height: 17px;
+    color: #c4c4c4;
+}
+.categories__item-text::after {
+    content: url("../img/link-arrow.svg");
+    padding-left: 3px;
+}
