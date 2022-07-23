@@ -15,10 +15,13 @@ $(function () {
     });
 
     $('.product-item__favorite').on('click', function () {
-        $('.product-item__favorite').toggleClass('product-item__favorite--active');
+        $(this).toggleClass('product-item__favorite--active');
     });
 
     $('.product-slider').slick({
-
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        prevArrow: '<button class="product-slider__slider-btn product-slider__slider-btnprev"><img src="img/arrow-left-black.svg" alt=""></button>',
+        nextArrow: '<button class="product-slider__slider-btn product-slider__slider-btnnext"><img src="img/arrow-right-black.svg" alt=""></button>'
     });
 });
