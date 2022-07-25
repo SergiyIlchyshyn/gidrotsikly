@@ -9,6 +9,7 @@
     --accentColor: #1C62CD;
     --grayColor: #F0F0F4;
     --lightColor: #cdcdcd;
+    --lightColor2: #c4c4c4;
     /*===== Fonts =====*/
     --SFProRegular: 'SFProDisplay-Regular', sans-serif;
     --SFProMedium: 'SFProDisplay-Medium', sans-serif;
@@ -454,7 +455,7 @@ ul {
 .categories__item-text {
     font-size: 14px;
     line-height: 17px;
-    color: #c4c4c4;
+    color: var(--lightColor2);
 }
 
 .categories__item-text::after {
@@ -710,7 +711,7 @@ ul {
 }
 
 .footer-form__input::placeholder {
-    color: #c4c4c4;
+    color: var(--lightColor2);
 }
 
 .footer-form__btn {
@@ -742,7 +743,6 @@ ul {
 
 .footer__top-social.footer__top-item {
     width: 250px;
-
 }
 
 .social-list {
@@ -754,4 +754,34 @@ ul {
 
 .social-list__item+.social-list__item {
     padding-left: 30px;
+}
+
+/* breadcrumbs links */
+.breadcrumbs {
+    margin-bottom: 40px;
+}
+
+.breadcrumbs__list-item {
+    display: inline-block;
+    padding-right: 16px;
+    margin-right: 10px;
+    position: relative;
+    font-size: 15px;
+    line-height: 18px;
+    color: var(--lightColor2);
+}
+
+.breadcrumbs__list-item::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 3px;
+    background-image: url("../img/icon-arrow.svg");
+    background-repeat: no-repeat;
+    width: 6px;
+    height: 12px;
+}
+
+.breadcrumbs__list-item:last-child:after {
+    display: none;
 }
