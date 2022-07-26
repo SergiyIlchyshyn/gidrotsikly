@@ -842,7 +842,8 @@ ul {
 }
 
 .catalog__inner-aside {
-    width: 290px;
+    width: 100%;
+    max-width: 290px;
     padding-right: 10px;
 }
 
@@ -886,4 +887,122 @@ ul {
 
 .pagination-list__item a {
     display: block;
+}
+
+/* ----- ASIDE SECTION ----- */
+.aside-filter__tabs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aside-filter__tab {
+    width: 50%;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    font-weight: var(--fontRegular);
+    color: var(--lightColor2);
+}
+
+.aside-filter__tab.tab--active {
+    color: var(--primaryColor);
+    font-family: var(--SFProBold);
+    font-weight: var(--fontBold);
+}
+
+.aside-filter__tab.tab--active span {
+    display: inline-block;
+    border-bottom: 2px solid var(--accentColor);
+    padding-bottom: 7px;
+}
+
+/* Filter components */
+.aside-filter__item-drop {
+    margin: 40px 0;
+}
+
+.aside-filter__item-title {
+    padding-left: 26px;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: var(--SFProSemibold);
+    font-weight: var(--fontSemibold);
+}
+
+.filter__item-drop {
+    margin-bottom: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.filter__item-drop::before {
+    content: "";
+    background-image: url("../img/arrow-down.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(0deg);
+    width: 12px;
+    height: 8px;
+}
+
+.filter__item-drop--active::before {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.aside-filter__content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aside-filter__content-box {
+    width: 50%;
+}
+
+.aside-filter__content-label {
+    font-size: 14px;
+    line-height: 17px;
+    cursor: pointer;
+}
+
+.jq-checkbox,
+.jq-radio {
+    width: 14px;
+    height: 14px;
+    margin: 0 8px 0 0;
+    background: #ffffff;
+    border: 1px solid var(--lightColor2);
+    border-radius: 1px;
+    box-shadow: none;
+    vertical-align: middle;
+}
+
+.jq-checkbox.checked,
+.jq-radio.checked {
+    background: var(--accentColor);
+    border: none;
+}
+
+.jq-checkbox.checked .jq-checkbox__div {
+    width: 10px;
+    height: 5px;
+    margin: 3px 0 0 2px;
+    border-bottom: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+    transform: rotate(-50deg);
+}
+
+.jq-radio.checked .jq-radio__div {
+    width: 0;
+    height: 0;
+    margin: 0;
+    border-radius: 0;
+    background: none;
+    box-shadow: none;
+}
+
+.aside-filter__content.aside-filter__content-radio {
+    flex-wrap: nowrap;
 }

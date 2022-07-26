@@ -24,4 +24,11 @@ $(function () {
         prevArrow: '<button class="product-slider__slider-btn product-slider__slider-btnprev"><img src="img/arrow-left-black.svg" alt=""></button>',
         nextArrow: '<button class="product-slider__slider-btn product-slider__slider-btnnext"><img src="img/arrow-right-black.svg" alt=""></button>'
     });
+
+    // jQuery Form Styler
+    $('.filter-style').styler();
+    $('.filter__item-drop').on('click', function () {
+        $(this).toggleClass('filter__item-drop--active');
+        $(this).next().slideToggle('200');
+    });
 });
