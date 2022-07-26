@@ -470,7 +470,7 @@ ul {
 }
 
 .product-item {
-    min-height: 400px;
+    min-height: 413px;
     padding: 52px 20px 31px;
     border: 1px solid var(--lightColor);
     border-radius: 3px;
@@ -784,4 +784,106 @@ ul {
 
 .breadcrumbs__list-item:last-child:after {
     display: none;
+}
+
+/* ========================================
+-------- CATALOG PAGE ----------
+======================================== */
+.catalog {
+    padding-bottom: 100px;
+}
+
+.catalog__title {
+    font-size: 30px;
+    line-height: 36px;
+    font-family: var(--SFProBold);
+    font-weight: var(--fontBold);
+    margin-bottom: 26px;
+}
+
+.catalog__filter {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.catalog__filter-items button {
+    padding: 5px 22px;
+    font-size: 14px;
+    line-height: 17px;
+    opacity: 0.7;
+    background-color: var(--grayColor);
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+.catalog__filter-items button+.catalog__filter-items button {
+    margin-left: 8px;
+}
+
+.catalog__filter-btn button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.catalog__filter-btn button+.catalog__filter-btn button {
+    margin-left: 10px;
+}
+
+.catalog__filter-btngrid {}
+
+.catalog__filter-btnline {}
+
+/* ------------------------------ */
+.catalog__inner {
+    display: flex;
+}
+
+.catalog__inner-aside {
+    width: 290px;
+    padding-right: 10px;
+}
+
+.catalog__inner-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.catalog__inner-list .product-item__wrapper {
+    margin-bottom: 30px;
+}
+
+.product-item__img {
+    max-width: 100%;
+}
+
+.pagination {
+    width: 100%;
+    margin-top: 70px;
+}
+
+.pagination-list {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination-list__item {
+    margin: 0 4px;
+    padding: 8px 15px;
+    border: 2px solid transparent;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--lightColor2);
+}
+
+.pagination-list__item.active {
+    border: 2px solid var(--accentColor);
+    color: var(--accentColor);
+}
+
+.pagination-list__item a {
+    display: block;
 }
