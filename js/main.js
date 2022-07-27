@@ -31,4 +31,14 @@ $(function () {
         $(this).toggleClass('filter__item-drop--active');
         $(this).next().slideToggle('200');
     });
+
+    //  jQuery Range Slider for price
+    $(".js-range-slider").ionRangeSlider({
+        type: "double",
+        min: 100000,
+        max: 2000000,
+        from: 100000,
+        to: 2000000,
+        grid: false
+    });
 });
