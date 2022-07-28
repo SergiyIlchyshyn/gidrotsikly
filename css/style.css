@@ -1021,7 +1021,7 @@ ul {
 .irs--flat .irs-min,
 .irs--flat .irs-max {
     visibility: visible !important;
-    top: 60px;
+    top: 55px;
     padding: 0;
     font-size: 14px;
     line-height: 17px;
@@ -1031,14 +1031,21 @@ ul {
     background-color: transparent;
     border-radius: 0;
     text-shadow: none;
-    position: relative;
+    /* position: relative; */
     display: inline-block;
-    width: 50%;
+    /* width: 50%; */
+    padding-left: 27px;
+}
+
+.irs--flat .irs-max {
+    text-align: right;
 }
 
 .irs--flat .irs-min::before,
 .irs--flat .irs-max::before {
-    padding-right: 5px;
+    /* padding-right: 12px; */
+    position: absolute;
+    left: 0;
     font-size: 14px;
     line-height: 17px;
     text-decoration: none;
@@ -1051,4 +1058,31 @@ ul {
 
 .irs--flat .irs-max::before {
     content: 'до';
+}
+
+.irs--flat .irs-line {
+    height: 1px;
+    background-color: #e0e0e0;
+    border-radius: 0;
+    top: 25px;
+}
+
+.irs--flat .irs-bar {
+    top: 25px;
+    height: 3px;
+    background-color: var(--accentColor);
+}
+
+.irs--flat .irs-handle {
+    width: 8px;
+    height: 8px;
+    background-color: var(--accentColor);
+    border-radius: 50%;
+    top: 22px;
+}
+
+.irs--flat .irs-handle>i:first-child,
+.irs--flat .irs-handle.state_hover>i:first-child,
+.irs--flat .irs-handle:hover>i:first-child {
+    background-color: transparent;
 }
