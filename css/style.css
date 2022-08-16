@@ -1361,3 +1361,27 @@ button.catalog__filter-btnline {
     border-bottom: 1px solid var(--lightColor-1);
     cursor: pointer;
 }
+
+/* ========================================
+-------- PRODUCT CARD PAGE ----------
+======================================== */
+.product-card__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.product-card__img-box {
+    width: 500px;
+    padding-top: 64px;
+    text-align: center;
+}
+.product-card__price-old {
+
+}
+.product-card__price-new {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: var(--fontBold);
+}
+.product-card__content {
+    width: 570px;
+}
